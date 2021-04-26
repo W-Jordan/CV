@@ -1,0 +1,128 @@
+html,
+body,
+main,
+div,
+em {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: white;
+  text-align: center;
+  color: rgba(1, 1, 31, 0.836);
+  display: flex;
+  flex: 1;
+}
+html{
+  width: 70vw;
+  margin: auto;
+}
+
+.couleurMoutarde {  background-color: rgb(238, 167, 13);}
+
+h1 {
+  letter-spacing: 1vw;
+  flex: 5;
+}
+h3 {letter-spacing: 0.3vw;}
+
+.cv {
+  flex-direction: column;
+  flex: 8;
+}
+
+.Titre{font-weight: bold;}
+.Contenu{padding-bottom: 1vh;}
+
+.bordureCentre {flex: 0.1;}
+
+.partieDroite,
+.partieGauche {
+  flex-direction: column;
+  flex: 3.75;
+}
+
+.espaceVertiCentre {flex: 0.25;}
+
+.espaceHori {
+  height: 15vh;
+  flex: none;
+  text-align: center;
+}
+.centrer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.droite {text-align: right;}
+.gauche {text-align: left;}
+
+ul { padding-left: 0%;}
+li {list-style-type: none;}
+.partieDroite{  text-align: left;}
+.partieGauche{text-align: right;}
+a,a:hover {text-decoration: none;}
+
+.socialbtns .fa {
+  width: 40px;
+  height: 28px;
+  color: rgb(238, 167, 13);
+  background-color: #fff;
+  border: 1px solid rgb(238, 167, 13);
+  border-radius: 22px;
+  display: flex;
+}
+
+.socialbtns .fa:hover {
+  color: #fff;
+  background-color: rgb(238, 167, 13);
+  border: 1px solid rgb(238, 167, 13);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 800px) {
+
+  h1{
+    margin:0;
+    padding-top: 1vh;
+  }
+
+  #nom {padding-left: 0;}
+
+  .ligne{flex-direction: column;}
+
+
+  .partieDroite,.partieGauche{
+    align-items: center;
+    text-align: center;
+  }
+  img,.espaceHori {display: none;  }
+  .espaceHori{height: 5vh;}
+
+  #ligneJW {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #prenom {
+    margin-bottom: -50px;
+    padding: 0%;
+  }
+
+
+  #profil,#contact,.ligne,.Gauche,.Droite {
+    text-align: center;
+  }
+  .ligneIcone{
+    border-bottom: solid 5px rgb(238, 167, 13); 
+    margin: 2vh 0;
+    padding: 1vh 0;
+  }
+
+  .Gauche,
+  .Droite {
+    width: 100%;
+    display: block;
+    padding: 0px;
+  }
+}
